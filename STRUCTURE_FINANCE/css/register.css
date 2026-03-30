@@ -1,0 +1,57 @@
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F3F4F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+.registerForm {
+    width: 448px;
+    height: 342px;
+    padding: 24px;
+    background-color: white;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap:8px;
+}
+
+input, #textRegister{
+    margin-bottom: 8px;
+    padding: 11px 9px;
+    font-size: 16px;
+    width: 400px;
+    height: 42px;
+    border-radius: 4px;
+    border : 2px solid #F3F4F6;
+    
+}
+#textRegister {
+    background: #16A34A;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.otherInput {
+    font-size: 14px;
+}
+.otherInput a {
+    text-decoration: none;
+}
+#registerNow {
+    color:#4F46E5 ;
+}
