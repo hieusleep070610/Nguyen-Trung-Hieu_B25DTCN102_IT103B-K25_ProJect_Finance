@@ -8,29 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=visibility" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 <body>
-    <div class="registerForm">
+    <div id="registerForm">
         <h2>Đăng ký tài khoản</h2>
         <div class="inputForm">
-            <form>
-                <div id="fullname">
-                    <input type="text" placeholder= "Tên đăng khoản">
+            <form id="formContent">
+                <div>
+                    <input id="registerName" type="text" placeholder= "Tên đăng khoản">
                 </div>
-                <div id="password">
-                    <input type="password" placeholder= "Mật khẩu">
+                <div class="passwordBox">
+                    <input id="password" type="password" placeholder= "Mật khẩu">
+                    <span class="material-symbols-outlined eyeIcon-1">
+                        visibility
+                    </span>
                 </div>
-                <div id="password">
-                    <input type="password" placeholder= "Xác nhận mật khẩu">
+                <div class="passwordBox">
+                    <input id="passwordConfirm" type="password" placeholder= "Xác nhận mật khẩu">
+                    <span class="material-symbols-outlined eyeIcon-2">
+                        visibility
+                    </span>
                 </div>
-                <button id="textRegister">Đăng ký</button>
+                <button id="btn-register" type="submit">Đăng ký</button>
             </form>
         </div>
         <div class="otherInput">
             <span>Đã có tài khoản?</span>
-            <a id="registerNow" href="">Đăng nhập</a>
+            <a id="registerNow" href="./login.html">Đăng nhập</a>
         </div>
     </div>
+    <script src="../js/register.js"></script>
 </body>
 </html>
