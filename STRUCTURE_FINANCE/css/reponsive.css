@@ -1,0 +1,61 @@
+@media (max-width: 768px){
+    body {
+        font-size: 12px;
+        padding: 0 10px;
+        gap: 15px;
+    }
+    .spendingDate,.budget,.remaining,.categoryManagement,.formExpense,.container,.warning,.statistics {
+        width: 100%;
+        max-width: 720px;
+    }
+    .spendingDate input,
+    .budget input,.budget button,
+    #categoryForm input,#categoryForm button,
+    .formExpense input,.formExpense select,.formExpense button,
+    .toolbar input,.toolbar select.search-btn {
+        font-size: 12px;
+    }
+
+    header {
+        font-size: 12px;
+        height: auto;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .menu {
+    position: absolute;
+    top: 100%;
+    right: 0; 
+    width: 150px;
+}
+
+    .banner {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .spendingDate,.budget,.remaining,.categoryManagement,.formExpense {
+        height: auto;
+        padding: 15px;
+    }
+
+    #categoryForm {
+        gap: 10px;
+        height: auto;
+    }
+    .search-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        padding: 10px;
+    }
+}
