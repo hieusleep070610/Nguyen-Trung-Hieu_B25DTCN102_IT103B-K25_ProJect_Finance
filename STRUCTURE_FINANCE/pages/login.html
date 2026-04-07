@@ -8,26 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=visibility" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="loginForm">
         <h2>🔐 Đăng nhập</h2>
         <div class="inputForm">
-            <form>
-                <div id="fullname">
-                    <input type="text" placeholder= "Tên đăng nhập">
+            <form id="formContent">
+                <div >
+                    <input id="loginName" type="text" placeholder= "Tên đăng nhập">
                 </div>
-                <div id="password">
-                    <input type="password" placeholder= "Mật khẩu">
+                <div class="passwordBox">
+                    <input id="password" type="password" placeholder= "Mật khẩu">
+                    <span class="material-symbols-outlined eyeIcon">
+                        visibility
+                    </span>
                 </div>
-                <button id="textLogin">Đăng nhập</button>
+                <span class="material-symbols-outlined eyeIcon">
+                    visibility
+                </span>
+                <button type="submit" id="btn-login">Đăng nhập</button>
             </form>
         </div>
         <div class="otherInput">
             <span>Chưa có tài khoản?</span>
-            <a id="registerNow" href="">Đăng ký ngay</a>
+            <a id="registerNow" href="./register.html">Đăng ký ngay</a>
         </div>
     </div>
+    <script src="../js/login.js"></script>
 </body>
 </html>
