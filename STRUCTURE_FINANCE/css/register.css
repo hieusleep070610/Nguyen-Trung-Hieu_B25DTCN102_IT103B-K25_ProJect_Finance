@@ -12,7 +12,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.registerForm {
+#registerForm {
     width: 448px;
     height: 342px;
     padding: 24px;
@@ -26,8 +26,18 @@ body {
     border-radius: 12px;
     gap:8px;
 }
+.passwordBox {
+    position: relative;
+    width: 300px;
+}
+.eyeIcon-1, .eyeIcon-2 {
+    position:absolute;
+    cursor:pointer ;
+    top: 10px;
+    right: -95px;
+}
 
-input, #textRegister{
+input, #btn-register{
     margin-bottom: 8px;
     padding: 11px 9px;
     font-size: 16px;
@@ -37,7 +47,7 @@ input, #textRegister{
     border : 2px solid #F3F4F6;
     
 }
-#textRegister {
+#btn-register {
     background: #16A34A;
     color: white;
     display: flex;
