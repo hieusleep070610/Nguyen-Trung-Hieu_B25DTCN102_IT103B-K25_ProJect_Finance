@@ -28,8 +28,20 @@ body {
     border-radius: 12px;
     gap:8px;
 }
+.passwordBox {
+    position: relative;
+    width: 300px;
+}
+.eyeIcon {
+    position:absolute;
+    cursor:pointer ;
+    top: 10px;
+    right: -95px;
+}
 
-input, #textLogin{
+
+
+input, #btn-login{
     margin-bottom: 8px;
     padding: 11px 9px;
     font-size: 16px;
@@ -39,7 +51,7 @@ input, #textLogin{
     border : 2px solid #F3F4F6;
     
 }
-#textLogin {
+#btn-login {
     background: #4F46E5;
     color: white;
     display: flex;
