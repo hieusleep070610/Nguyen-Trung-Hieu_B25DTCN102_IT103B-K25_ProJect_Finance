@@ -38,25 +38,21 @@ const monthlyCategories = [
     }
 ]
 
-const categories = JSON.parse(localStorage.getItem("categories")) || [
+const defaultCategories = [
     {
         id:1,
         userId:1,
         name:"tiền đi học",
-        imageurl: "đường dẫn ảnh",
         limitPrice:200000,
-        status : true
     },
     {
         id:2,
         userId:1,
         name:"tiền đi chơi",
-        imageurl: "đường dẫn ảnh",
         limitPrice:150000,
-        status : false
     }
-    
-]
+];
+
 const transactions = [
     {
         id: 1,
@@ -68,7 +64,7 @@ const transactions = [
         monthlycategoryId:1
     }
 ];
-
+let categories = JSON.parse(localStorage.getItem("categories")) || [];
 let transactionsData = JSON.parse(localStorage.getItem("transactions")) || [];
 
 let indexEdit = -1;
@@ -369,8 +365,7 @@ sortSelect.addEventListener("change", (e) => {
     } else if (value === "Giảm dần") {
         sortType = "decrease";
     } else {
-        sortType = "";// Chọn danh mục
-        
+        sortType = "";
     }
     currentPage = 1;
     renderTransactions();
