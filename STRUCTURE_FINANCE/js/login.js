@@ -19,7 +19,9 @@ const usersBasic = [
     }
 ]
 
-localStorage.setItem("users", JSON.stringify(usersBasic));
+if (!localStorage.getItem("users")) {
+    localStorage.setItem("users", JSON.stringify(usersBasic));
+}
 const form = document.querySelector("#formContent");
 const loginName = document.querySelector("#loginName");
 const password = document.querySelector("#password");
@@ -45,7 +47,7 @@ form.addEventListener("submit", (event) => {
     // Lấy dữ liệu từ local
     let users = JSON.parse(localStorage.getItem("users")) || [];
     // Tìm user 
-    let found = users.find(user => user.email === loginName.value && user.password === password.value);
+    let found = users.find(user => user.email.toLowerCase() === loginName.value.toLowerCase() && user.password === password.value);
     if (!found) {
         swal("Lỗi", "Email hoặc mật khẩu không đúng", "error");
         return;
@@ -64,3 +66,4 @@ eyeIconElement.addEventListener("click",()=>{
         password.type = "password";
     }
 });
+
